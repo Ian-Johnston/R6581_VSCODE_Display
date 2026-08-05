@@ -1,0 +1,25 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "STM32F103 Blue Pill",
+            "type": "cortex-debug",
+            "request": "launch",
+
+            "cwd": "${workspaceFolder}",
+            "executable": "${workspaceFolder}/build/BluePill_Project",
+
+            "servertype": "stlink",
+            "interface": "swd",
+            "device": "STM32F103C8",
+
+            "gdbPath": "C:/ARM_Toolchain/arm-eabi/bin/arm-none-eabi-gdb.exe",
+            "serverpath": "C:/ST/STM32CubeCLT_1.22.0/STLink-gdb-server/bin/ST-LINK_gdbserver.exe",
+
+            "stm32cubeprogrammer": "C:/ST/STM32CubeCLT_1.22.0/STM32CubeProgrammer/bin",
+
+            "runToEntryPoint": "main",
+            "showDevDebugOutput": "raw"
+        }
+    ]
+}

@@ -1,0 +1,3 @@
+D:/Code_STM32/R6581_VSCODE_Display/build/CMakeFiles/BluePill_Project.dir
+D:/Code_STM32/R6581_VSCODE_Display/build/CMakeFiles/edit_cache.dir
+D:/Code_STM32/R6581_VSCODE_Display/build/CMakeFiles/rebuild_cache.dir
