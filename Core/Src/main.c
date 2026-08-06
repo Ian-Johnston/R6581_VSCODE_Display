@@ -6,9 +6,11 @@
   *
   * Original code by MickleT, this version modded by Ian Johnston (IanScottJohnston on YouTube),
   * for 4.58" 960x320 TFT LCD (ST7701S) and using LT7680 controller adaptor
-  * Visual Studio 2022 with VisualGDB plugin:
-  * To upload HEX from VS2022 = BUILD then PROGRAM AND START WITHOUT DEBUGGING
-  * Use LIVE WATCH to view variables live debug
+  * Visual Studio Code:
+  * Build = CTRL-SHIFT-B
+  * Upload HEX = CTRL-SHIFT-P → Tasks: Run Task → Flash Blue Pill
+  * Build & Upload = CTRL-SHIFT-P → Tasks: Run Task → Build and Flash
+  * Debug = F5 then F5 (ST-LINK GDB Server)
   * 
   * For use with a LT7680A-R & 320x960 TFT LCD
   * 
