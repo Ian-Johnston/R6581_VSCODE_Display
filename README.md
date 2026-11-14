@@ -9,12 +9,6 @@ to drive a 320x960 TFT LCD.
 My webpage:
 https://www.ianjohnston.com/index.php/conversions/video-blog-148-r6581totft
 
-**Build:**
-- Visual Studio 2022 with the VisualGDB plugin (https://visualgdb.com).
-- The .HEX file is in /VisualGDB/Debug. Programming notes are in _Programming.txt.
-- Function prototypes in some headers are missing; VS2022/VisualGDB still builds working code.
-
-
 **Interface with R6581 (VFD data sniffing):**
 ```
 BluePill    Function
