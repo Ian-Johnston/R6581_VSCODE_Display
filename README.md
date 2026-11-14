@@ -1,6 +1,6 @@
 # Advantest R6581(T) DMM TFT display upgrade - STM32 BluePill + LT7680A-R + 4.58" 320x960 TFT
 
-![R6581 TFT display upgrade](https://raw.githubusercontent.com/Ian-Johnston/R6581_VS_Display/master/Photos/R6581.png)
+![R6581 TFT display upgrade](Photos/R6581.png)
 
 This is the **Visual Studio Code** version (VS Code + CMake + GNU Arm Embedded Toolchain) of the original **Visual Studio 2022 / VisualGDB** project: [R6581_VS_Display](https://github.com/Ian-Johnston/R6581_VS_Display)
 
