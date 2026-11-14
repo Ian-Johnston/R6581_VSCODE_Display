@@ -1,4 +1,4 @@
-Advantest R6581(T) DMM TFT display upgrade - STM32 BluePill + LT7680A-R + 4.58" 320x960 TFT
+# Advantest R6581(T) DMM TFT display upgrade - STM32 BluePill + LT7680A-R + 4.58" 320x960 TFT
 
 R6581 VFD reverse engineering by MickleT, who developed the original OLED conversion. EEVBlog thread:
 https://www.eevblog.com/forum/repair/advantest-r6581-vfd-replacement/
@@ -6,7 +6,7 @@ https://www.eevblog.com/forum/repair/advantest-r6581-vfd-replacement/
 My webpage:
 https://www.ianjohnston.com/index.php/conversions/video-blog-148-r6581totft
 
-**Interface with R6581 (VFD data sniffing):**
+## Interface with R6581 (VFD data sniffing)
 ```
 BluePill    Function
 PB11        VFD RESTART (EXTI, start of a display refresh cycle)
@@ -25,7 +25,7 @@ Link / button options:
 - PC13: test LED.
 
 
-**Display hardware:**
+## Display hardware
 - Controller: Levetop LT7680A-R (128Mb built-in SDRAM), driven by STM32 SPI1 (PA4 CS, PA5 SCK, PA6 MISO, PA7 MOSI), reset on PB10.
 - TFT: EastRising ER-TFT4.58-1 / AUO 4.58", 320x960 visible, ST7701S driver, 18-bit RGB from the LT7680.
   Same panel as the R6243 TFT project.
@@ -37,7 +37,7 @@ Link / button options:
 - LT7680 controller adaptor PCB files: /Hardware.
 
 
-**Fixes - November 2026 (random stuck pixels / edge pixels):**
+## Fixes - November 2026 (random stuck pixels / edge pixels)
 Same fixes as the 34401A, 3478A and R6243 TFT projects.
 
 1. SDRAM auto-refresh was never enabled (main cause of random pixels) - lt7680.c SDRAM_Init_LT()
@@ -70,7 +70,7 @@ Same fixes as the 34401A, 3478A and R6243 TFT projects.
    (DrawText_old() in lt7680.c has its REG[BAh] polling commented out and is not used.)
 
 
-**Notes for alignment (not changed):**
+## Notes for alignment (not changed)
 - TFT timings (VBPD, VFPD, VSPW, HBPD, HFPD, HSPW, refresh rate) are user-selectable from 6 sets in
   main.c (LCD_xxx_SETTINGS[]) and saved to Flash. Set 6 uses the BuyDisplay ST7701S init.
 - AdaFruit_Init() runs the ST7701S in DE mode (C3h = 0x02). BuyDisplay_Init() runs it in HV mode
