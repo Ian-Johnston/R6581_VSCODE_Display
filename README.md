@@ -1,5 +1,7 @@
 # Advantest R6581(T) DMM TFT display upgrade - STM32 BluePill + LT7680A-R + 4.58" 320x960 TFT
 
+This is the **Visual Studio Code** version (VS Code + CMake + GNU Arm Embedded Toolchain) of the original **Visual Studio 2022 / VisualGDB** project: [R6581_VS_Display](https://github.com/Ian-Johnston/R6581_VS_Display)
+
 R6581 VFD reverse engineering by MickleT, who developed the original OLED conversion. EEVBlog thread:
 https://www.eevblog.com/forum/repair/advantest-r6581-vfd-replacement/
 
